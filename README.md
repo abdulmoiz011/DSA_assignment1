@@ -1,5 +1,6 @@
 # DSA_assignment1
 Overview
+
 This repository contains three separate implementations:
 
 CPU Process Scheduling Algorithm: A linked list-based implementation that simulates CPU scheduling, where processes cycle through CPU time slots until they complete.
@@ -22,25 +23,37 @@ User Interaction: After each cycle, the user is prompted to add a new process if
 Big Number Storage: A 1024-bit number is split into chunks and stored across multiple nodes of a linked list. Each node holds a part of the large number (up to 64 bits).
 Prime Test: The program checks whether the entire 1024-bit number is divisible by small prime numbers (up to 47) to determine if it is composite.
 Modular Arithmetic: The algorithm uses modular arithmetic across the linked list to calculate the remainder when dividing the number by small primes, ensuring the primality check works across multiple nodes.
+
 Assumptions
+
 CPU Process Scheduling:
 Each process has a unique process ID.
+
 The scheduler assigns CPU time fairly, giving each process a fixed quantum in every cycle.
+
 The system will stop once all processes complete.
+
 Enhanced CPU Process Scheduling:
+
 The user can choose to add new processes dynamically during execution.
+
 New processes are added with their initial execution times and join the queue seamlessly.
+
 1024-bit Number Primality Test:
 The number is stored in decimal form, and each node can contain a part of the number up to 64 bits.
 Primality is checked using small primes to quickly filter out composite numbers.
-Challenges Faced
-Process Scheduling:
 
+Challenges Faced
+
+Process Scheduling:
 Handling the removal of completed processes from the circular linked list while ensuring the structure of the list remains intact was tricky.
 Maintaining fairness in time allocation while dynamically handling process arrivals required careful attention.
+
 Primality Test:
 
 Managing the large size of the number stored across multiple nodes, especially when performing modular arithmetic, was a challenge.
 Efficiently handling the primality check without exceeding memory limits and ensuring accuracy across linked list nodes was complex.
+
 Publicly Accessible GitHub Link
-You can find the code for these tasks in this repository: GitHub Repository Link
+
+You can find the code for these tasks in this repository: https://github.com/abdulmoiz011/DSA_assignment1.git
